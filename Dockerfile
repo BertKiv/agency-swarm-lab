@@ -10,7 +10,7 @@ COPY requirements.txt .
 RUN pip install -r requirements.txt
 
 # Define environment variable for OpenAI API Key
-ENV OPENAI_API_KEY YourOpenAIKeyHere
+ENV OPENAI_API_KEY=${OPENAI_API_KEY}
 
 # Expose port 7860
 EXPOSE 7860
